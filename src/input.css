@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.css-button-3d--red {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background: #ef233c;
+  box-shadow: 0 5px #d90429;
+}
+.css-button-3d--red:hover {
+  box-shadow: 0 3px #d90429;
+  top: 1px;
+}
+.css-button-3d--red:active {
+  box-shadow: 0 0 #d90429;
+  top: 5px;
+}
+.css-button-3d--sky {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background: #3a86ff;
+  box-shadow: 0 5px #4433ff;
+}
+.css-button-3d--sky:hover {
+  box-shadow: 0 3px #4433ff;
+  top: 1px;
+}
+.css-button-3d--sky:active {
+  box-shadow: 0 0 #4433ff;
+  top: 5px;
+}
+.css-button-sliding-to-left--blue {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid #2c0b8e;
+  color: #2c0b8e;
+}
+.css-button-sliding-to-left--blue:hover {
+  color: #fff;
+}
+.css-button-sliding-to-left--blue:hover:after {
+  width: 100%;
+}
+.css-button-sliding-to-left--blue:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #2c0b8e;
+}
