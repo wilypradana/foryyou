@@ -67,9 +67,9 @@ Go to the project directory
 
 ## 🔗 Links
 
-[![instagram](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/wxhzyyy/)
+[![instagram](https://img.shields.io/badge/instagram-0A66C2?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/wxhzyyy/)
 
-[![facebook](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=facebook&logoColor=white)](https://facebook.com/wilpradana)
+[![facebook](https://img.shields.io/badge/facebook-1DA1F2?style=for-the-badge&logo=facebook&logoColor=white)](https://facebook.com/wilpradana)
 
 
 ## Documentation send message
