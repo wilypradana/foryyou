@@ -50,7 +50,7 @@ Here are some related projects
 Clone the project
 
 ```bash
-https://github.com/wilypradana/foryyou.git
+git clone https://github.com/wilypradana/foryyou.git
 ```
 
 Go to the project directory
