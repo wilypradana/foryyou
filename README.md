@@ -32,6 +32,11 @@ Demo site
 
 'Dai Banna SIL'
 
+#### Cara Ubah Path Domain?
+ubah foldernya saja dan filenya adalah index
+Jadi hanya perlu /dir/
+bukan /dir/file
+
 
 
 ## Related
