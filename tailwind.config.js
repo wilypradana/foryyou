@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./src/**/*.{html,css}",
     "./yes/index.html",
+    "./reject/index.html",
     "./confirm/index.html",
   ],
   theme: {

@@ -718,6 +718,11 @@ video {
   background-color: rgb(255 219 46 / var(--tw-bg-opacity));
 }
 
+.bg-red-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
 .bg-sky-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(2 132 199 / var(--tw-bg-opacity));
@@ -830,6 +835,11 @@ video {
   color: rgb(249 115 22 / var(--tw-text-opacity));
 }
 
+.text-yellow-300 {
+  --tw-text-opacity: 1;
+  color: rgb(253 224 71 / var(--tw-text-opacity));
+}
+
 .placeholder-transparent::-moz-placeholder {
   color: transparent;
 }
@@ -907,6 +917,7 @@ video {
   color: #fff;
   padding: 5px 10px;
   font-weight: bold;
+  margin: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;

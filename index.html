@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
       rel="stylesheet"
@@ -23,6 +24,7 @@
     <img src="/image/pat4.jpg" alt="" />
     <div
       class="card bg-card shadow-[10px_3px_0px_0px_#1a202c] mx-auto mt-3 w-4/5 text-custom font-custom p-3"
+      data-aos="fade-right"
     >
       Sepi menyelimuti jiwa, <br />
       Bayang-bayang masa lalu mulai bermunculan. <br />
@@ -32,6 +34,7 @@
     <img src="/image/pat2.jpg" alt="" class="mt-8 w-full" />
     <div
       class="card bg-card shadow-[10px_3px_0px_0px_#1a202c] mx-auto mt-3 w-4/5 text-custom font-custom p-3"
+      data-aos="fade-up-right"
     >
       Oh, betapa aku rindu masa itu, <br />
       Dimana kita saling memiliki dan saling mengisi. <br />
@@ -42,6 +45,7 @@
     <img src="/image/stand2.jpg" alt="" class="mt-8 w-full" />
     <div
       class="card bg-card shadow-[10px_3px_0px_0px_#1a202c] mx-auto mt-3 w-4/5 text-custom font-custom p-3"
+      data-aos="fade-up-left"
     >
       Aku ingin kembali ke masa itu, <br />
       Dimana kita hanyut dalam kasih sayang yang mendalam. <br />
@@ -51,6 +55,7 @@
     <img src="/image/stand3.jpg" alt="" class="mt-8 w-full" />
     <div
       class="card bg-card shadow-[10px_3px_0px_0px_#1a202c] mx-auto mt-3 w-4/5 text-custom font-custom p-3"
+      data-aos="fade-down-right"
     >
       Ingin kuucap rindu sampai tertahan di dada, <br />
       Berharap kau tahu rasa milikku yang tak berkata. <br />
@@ -60,10 +65,18 @@
     </div>
     <div class="card bg-card mt-10 text-custom font-footer p-3">
       Perasaan ku sudah kucarahkan semua terima lah permintaan maafku
-      <div class="flex justify-center items-center mt-5 gap-2">
-        <button class="css-button-3d--red">Maaf aku tidak bisa</button>
+      <div class="flex justify-center items-center mt-5">
+        <a href="/reject/" class="css-button-3d--red">Maaf aku tidak bisa</a>
         <a href="/yes/" class="css-button-3d--sky">ya aku maafkan</a>
       </div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        delay: 300,
+        debounceDelay: 100,
+        throttleDelay: 120,
+      });
+    </script>
   </body>
 </html>

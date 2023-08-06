@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />  
     <link
       href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
       rel="stylesheet"
@@ -23,6 +24,7 @@
     <img src="/image/pat4.jpg" alt="" />
     <div
       class="card bg-card shadow-[10px_3px_0px_0px_#1a202c] mx-auto mt-3 w-4/5 text-custom font-custom p-3"
+      data-aos="flip-left"
     >
       Serius? Kamu kangen sama aku? <br />
       Rasanya begitu membahagiakan, Mendengarmu mengaku rindu, <br />
@@ -31,6 +33,7 @@
     <img src="/image/stand3.jpg" alt="" class="mt-8 w-full" />
     <div
       class="card bg-card shadow-[10px_3px_0px_0px_#1a202c] mx-auto mt-3 w-4/5 text-custom font-custom p-3"
+      data-aos="flip-up"
     >
       Ingin kuucap rindu sampai tertahan di dada, <br />
       Berharap kau tahu rasa milikku yang tak berkata. <br />
@@ -38,9 +41,10 @@
       Agar kisah kita dapat dimulai kembali.
       <br />
     </div>
-    <img src="/image/stand3.jpg" alt="" class="mt-8 w-full" />
+    <img src="/image/stand4.jpg" alt="" class="mt-8 w-full" />
     <div
       class="card bg-card shadow-[10px_3px_0px_0px_#1a202c] mx-auto mt-3 w-4/5 text-custom font-custom p-3"
+      data-aos="zoom-in-right"
     >
       "Aku rindu padamu. Maafkan aku atas segalanya. Sebagai permintaan maaf,
       ada hadiah kecil untukmu. Kamu lagi mau apa? Biar kubelikan,  apapun yang
@@ -48,26 +52,31 @@
       melihatmu tersenyum lagi `."
       <br />
     </div>
-    <div class="card bg-card mt-10 text-custom font-footer p-3">
+    <div class="card bg-card mt-10 text-custom font-footer p-3"
+   >
         
-            <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+            <div class="relative py-3 sm:max-w-xl sm:mx-auto"
+         >
               
-                <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
+                <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20"
+                >
                     <div class="max-w-md mx-auto">
                         <div>
-                            <h1 class="text-2xl font-semibold">Please input on here</h1>
+                            <h1 class="text-2xl font-semibold">Kirim disini ya</h1>
                         </div>
                         <div class="divide-y divide-gray-200">
+                          <form name="submit-to-google-sheet">
                             <div class="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
                                 <div class="relative">
-                                    <input autocomplete="off" id="email" name="email" type="text" class="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600" placeholder="Email address" />
+                                    <input autocomplete="off" id="email" name="pesan" type="text" class="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600" placeholder="Email address" />
                                     <label for="email" class="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">Pesananku</label>
                                 </div>
                            
                                 <div class="relative">
-                                    <button class="css-button-sliding-to-left--blue">Pesan</button>
+                                    <button class="css-button-sliding-to-left--blue" type="submit">Pesan</button>
                                 </div>
                             </div>
+                          </form>
                         </div>
                     </div>
                 </div>
@@ -75,5 +84,24 @@
         
       </div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        delay: 300,
+        debounceDelay: 100,
+        throttleDelay: 120,
+      });
+    </script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxUmNUOUTcUF1HsoshVV94v6a_dDwSaA9kcLQCidZiGRn6kTcmDn2ux5N0aXp8TU30HrQ/exec'
+      const form = document.forms['submit-to-google-sheet']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => window.location.href = "/confirm/")
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
   </body>
 </html>
