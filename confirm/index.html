@@ -105,13 +105,15 @@
     </div>
     <script>
       setTimeout(() => {
-        const toastSimple = document.getElementById("toast-simple");
-        toastSimple.classList.add("animate-slide-rotate-ver-left");
         const sprikle = document.getElementsByClassName("sprikle");
         for (let i = 0; i < sprikle.length; i++) {
           sprikle[i].classList.add("hidden");
         }
-      }, 5000);
+      }, 10000);
+      setTimeout(() => {
+        const toastSimple = document.getElementById("toast-simple");
+        toastSimple.classList.add("animate-slide-rotate-ver-left");
+      }, 3000);
     </script>
   </body>
 </html>
